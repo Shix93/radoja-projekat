@@ -1,16 +1,11 @@
 Rails.application.routes.draw do
+  
+
+  get 'Naslovna', to: 'welcome#index'
+  root 'welcome#index'
   get 'welcome/about'
 
-  get 'welcome/index'
-
-  get 'models/index'
-
-  get 'models/new'
-
-  get 'models/edit'
-
-  get 'models/show'
-
+  resources :models
   resources :dealers
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
