@@ -25,7 +25,7 @@ ActiveRecord::Schema.define(version: 0) do
 		t.string   "sifra_modela",     limit: 50,   null: false
 		t.string   "duzina",           limit: 50,   null: false
 		t.string   "menjac",           limit: 50,   null: false
-		t.string   "snaga",            limit: 5
+		t.string   "snaga",            limit: 30
 		t.integer  "broj_brzina",      limit: 2
 		t.string   "cena",             limit: 50,   null: false
 	end

@@ -1,7 +1,8 @@
 class WelcomeController < ApplicationController
-  def about
+  def index
+  	@models=Model.all
   end
 
-  def index
+  def about
   end
 end

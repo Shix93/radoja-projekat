@@ -1,0 +1,11 @@
+<% @models.each do |model| %>
+	<tr>
+		<td data-th="Ime"><%= model.ime %></th>
+		<td data-th="Šifra modela"><%= model.sifra_modela %></th>
+		<td data-th="Dužina"><%= model.duzina %></th>
+		<td data-th="Menjač"><%= model.menjac %></th>
+		<td data-th="Snaga"><%= model.snaga %></th>
+		<td data-th="Broj brzina"><%= model.broj_brzina %></th>
+		<td data-th="Ceba"><%= model.cena %></th>
+	</tr>
+<% end %>

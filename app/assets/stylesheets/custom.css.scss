@@ -1,0 +1,283 @@
+@import "compass/css3";
+
+
+/****************************************************
+* Form
+****************************************************/
+
+// More practical CSS...
+// using mobile first method (IE8,7 requires respond.js polyfill https://github.com/scottjehl/Respond)
+
+$breakpoint-alpha: 480px; // adjust to your needs
+
+.rwd-table {
+  margin: 1em 0;
+  min-width: 300px; // adjust to your needs
+  
+  tr {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    display: none; // for accessibility, use a visually hidden method here instead! Thanks, reddit!   
+  }
+  
+  td {
+    display: block; 
+    
+    &:first-child {
+      padding-top: .5em;
+    }
+    &:last-child {
+      padding-bottom: .5em;
+    }
+
+    &:before {
+      content: attr(data-th)": "; // who knew you could do this? The internet, that's who.
+      font-weight: bold;
+
+      // optional stuff to make it look nicer
+      width: 6.5em; // magic number :( adjust according to your own content
+      display: inline-block;
+      // end options
+      
+      @media (min-width: $breakpoint-alpha) {
+        display: none;
+      }
+    }
+  }
+  
+  th, td {
+    text-align: left;
+    
+    @media (min-width: $breakpoint-alpha) {
+      display: table-cell;
+      padding: .25em .5em;
+      
+      &:first-child {
+        padding-left: 0;
+      }
+      
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+
+  }
+  
+  
+}
+
+
+// presentational styling
+
+@import 'http://fonts.googleapis.com/css?family=Montserrat:300,400,700';
+
+body {
+  padding: 0 2em;
+  font-family: Montserrat, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  color: #444;
+  background: #eee;
+}
+
+h1 {
+  font-weight: normal;
+  letter-spacing: -1px;
+  color: #34495E;
+}
+
+.rwd-table {
+  background: #34495E;
+  color: #fff;
+  border-radius: .4em;
+  overflow: hidden;
+  tr {
+    border-color: lighten(#34495E, 10%);
+  }
+  th, td {
+    margin: .5em 1em;
+    @media (min-width: $breakpoint-alpha) { 
+      padding: 1em !important; 
+    }
+  }
+  th, td:before {
+    color: #FFC107;
+  }
+}
+
+/**************************************************
+* Menu
+**************************************************/
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #FFC107;
+    overflow-x: hidden;
+    text-align: center;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    background-color: #000001;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+header > nav > div {
+    float: left;
+    width: 33.333333%;
+    height: 100%;
+    position: relative;
+}
+
+header > nav > div > a {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: block;
+    line-height: 50px;
+    color: #fbfbfb;
+    transition: background-color 0.2s ease;
+    text-transform: uppercase;
+    text-decoration:none;
+}
+
+header > nav > div:hover > a {
+    background-color: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+header > nav > div > div {
+    display: none;
+    overflow: hidden;
+    background-color: white;
+    min-width: 200%;
+    position: absolute;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    padding: 10px;
+}
+
+header > nav > div:not(:first-of-type):not(:last-of-type) > div {
+    left: -50%;
+    border-radius: 0 0 3px 3px;
+}
+
+header > nav > div:first-of-type > div {
+    left: 0;
+    border-radius: 0 0 3px 0;
+}
+
+header > nav > div:last-of-type > div {
+    right: 0;
+    border-radius: 0 0 0 3px;
+}
+
+header > nav > div:hover > div {
+    display: block;
+}
+
+header > nav > div > div > a {
+    display: block;
+    float: left;
+    padding: 8px 10px;
+    width: 46%;
+    margin: 2%;
+    text-align: center;
+    background-color: #f44355;
+    color: #fbfbfb;
+    border-radius: 2px;
+    transition: background-color 0.2s ease;
+}
+
+header > nav > div > div > a:hover {
+    background-color: #212121;
+    cursor: pointer;
+}
+
+h1 {
+    margin-top: 100px;
+    font-weight: 100;
+}
+
+p {
+    color: #aaa;
+    font-weight: 300;
+}
+
+@media (max-width:600px) {
+    header > nav > div > div > a {
+        margin: 5px 0;
+        width: 100%;
+    }
+    header > nav > div > a > span {
+        display: none;
+    }
+}
+
+.center {
+  width:100%;
+}
+
+
+/**************************************************
+* Dropdown
+**************************************************/
+
+/* Style The Dropdown Button */
+.dropbtn {
+    background-color: #000001;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    float: left;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #46637f;
+    color: white;
+}

@@ -76,6 +76,10 @@ Dealer.create(
 	broj_telefona: "325461028"
 	)
 
+###############################################
+# Model
+###############################################
+
 Model.create(
 	ime: "Opel Astra Sedan 1.6i Club",
 	sifra_modela: "OPA12",
@@ -83,7 +87,7 @@ Model.create(
 	menjac: "Manuelni",
 	snaga: "75 KS",
 	broj_brzina: "5",
-	cena: "14726"
+	cena: "14726 EUR"
 	)
 
 Model.create(
@@ -93,7 +97,7 @@ Model.create(
 	menjac: "Manuelni",
 	snaga: "85 KS",
 	broj_brzina: "5",
-	cena: "10300"
+	cena: "10300 EUR"
 	)
 
 Model.create(

@@ -1,0 +1,8 @@
+<% @dealers.each do |dealer| %>
+	<tr>
+		<td data-th="Ime"><%= dealer.ime %></th>
+		<td data-th="Adresa"><%= dealer.adresa %></th>
+		<td data-th="Brend"><%= dealer.brend %></th>
+		<td data-th="Broj telefona"><%= dealer.broj_telefona %></th>
+	</tr>
+<% end %>

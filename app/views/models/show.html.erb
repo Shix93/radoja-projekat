@@ -1,2 +1,17 @@
-<h1>Models#show</h1>
-<p>Find me in app/views/models/show.html.erb</p>
+<head>
+  <title><%= @model.ime %></title>
+</head>
+<body>
+	<h1 ><%= @model.ime%></h1>
+
+
+	<table class="rwd-table center">
+		<th>Specifikiacije modela</th>
+		<tr><td><%= @model.sifra_modela %></td></tr>
+		<tr><td><%= @model.duzina %></td></tr>
+		<tr><td><%= @model.menjac %></td></tr>
+		<tr><td><%= @model.snaga %></td></tr>
+		<tr><td><%= @model.broj_brzina %></td></tr>
+		<tr><td><%= @model.cena %></td></tr>
+	</table>
+</body>
