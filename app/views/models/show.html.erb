@@ -13,5 +13,8 @@
 		<tr><td><%= @model.snaga %></td></tr>
 		<tr><td><%= @model.broj_brzina %></td></tr>
 		<tr><td><%= @model.cena %></td></tr>
+		<tr><td><%= @model.valuta %></td></tr>
 	</table>
+
+	<p id="boja-teksta">Cena bez PDVa je: <%= @model.cena*(1/1.2) %></p>
 </body>

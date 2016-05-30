@@ -27,7 +27,8 @@ ActiveRecord::Schema.define(version: 0) do
 		t.string   "menjac",           limit: 50,   null: false
 		t.string   "snaga",            limit: 30
 		t.integer  "broj_brzina",      limit: 2
-		t.string   "cena",             limit: 50,   null: false
+		t.integer  "cena",             limit: 6,    null: false
+		t.string   "valuta",           limit: 50,   null: false
 	end
 
 	create_table  "dealers_models", force: :cascade do |t|

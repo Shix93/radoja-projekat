@@ -87,7 +87,8 @@ Model.create(
 	menjac: "Manuelni",
 	snaga: "75 KS",
 	broj_brzina: "5",
-	cena: "14726 EUR"
+	cena: "14726 ",
+	valuta: "EUR"
 	)
 
 Model.create(
@@ -97,7 +98,8 @@ Model.create(
 	menjac: "Manuelni",
 	snaga: "85 KS",
 	broj_brzina: "5",
-	cena: "10300 EUR"
+	cena: "10300",
+	valuta: "EUR"
 	)
 
 Model.create(
@@ -107,7 +109,8 @@ Model.create(
 	menjac: "Manuelni",
 	snaga: "140 KS",
 	broj_brzina: "6",
-	cena: "28690"
+	cena: "28690",
+	valuta: "EUR"
 	)
 
 Model.create(
@@ -117,7 +120,8 @@ Model.create(
 	menjac: "Poluautomat",
 	snaga: "225 KS",
 	broj_brzina: "8",
-	cena: "83990"
+	cena: "83990",
+	valuta: "EUR"
 	)
 
 Model.create(
@@ -127,7 +131,8 @@ Model.create(
 	menjac: "Manuelni",
 	snaga: "44 KS",
 	broj_brzina: "5",
-	cena: "15000"
+	cena: "15000",
+	valuta: "EUR"
 	)
 
 Model.create(
@@ -137,7 +142,8 @@ Model.create(
 	menjac: "Manuelni",
 	snaga: "106 KS",
 	broj_brzina: "6",
-	cena: "25800"
+	cena: "25800",
+	valuta: "EUR"
 	)
 
 Model.create(
@@ -147,7 +153,8 @@ Model.create(
 	menjac: "Poluautomat",
 	snaga: "105 KS",
 	broj_brzina: "7",
-	cena: "18450"
+	cena: "18450",
+	valuta: "EUR"
 	)
 
 Model.create(
@@ -157,7 +164,8 @@ Model.create(
 	menjac: "Manuelni",
 	snaga: "75 KS",
 	broj_brzina: "5",
-	cena: "7120"
+	cena: "7120",
+	valuta: "EUR"
 	)
 
 Model.create(
@@ -167,7 +175,8 @@ Model.create(
 	menjac: "Manuelni",
 	snaga: "93 KS",
 	broj_brzina: "6",
-	cena: "18250"
+	cena: "18250",
+	valuta: "EUR"
 	)
 
 Model.create(
@@ -177,5 +186,6 @@ Model.create(
 	menjac: "Manuelni",
 	snaga: "120 KS",
 	broj_brzina: "6",
-	cena: "24840"
+	cena: "24840",
+	valuta: "EUR"
 	)
