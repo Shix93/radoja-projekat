@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  
 
   get 'Naslovna', to: 'welcome#index'
   root 'welcome#index'
@@ -7,6 +6,15 @@ Rails.application.routes.draw do
 
   resources :models
   resources :dealers
+
+
+  # config/routes.rb
+  namespace :api do
+    api version: 1, module: 'v1' do
+      resources :dealers, only: [:index]
+  end
+  end
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
