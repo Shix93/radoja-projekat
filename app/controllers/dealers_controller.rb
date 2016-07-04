@@ -1,7 +1,12 @@
 class DealersController < ApplicationController
   def index
   	@dealers = Dealer.all
-  	render json: @dealers
+  	respond_to do |format|
+  		# Prikazi html na ovoj ruti
+  		format.html
+  		# ako kucamo .json, dobijamo .json format
+  		format.json { render json: @dealers }
+  	end
   end
 
   def new
