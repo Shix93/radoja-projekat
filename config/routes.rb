@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   namespace :api do
     api version: 1, module: 'v1' do
       resources :dealers, only: [:index]
-  end
+    end
   end
 
   # The priority is based upon order of creation: first created -> highest priority.
